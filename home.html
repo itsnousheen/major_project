@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tourist Recommendation System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, teal, skyblue);
+      color: black;
+    }
+
+    header {
+      background: blue;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    select, .go-button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid grey;
+      font-size: 16px;
+    }
+
+    .go-button {
+      background: blue;
+      color: white;
+      border: none;
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .go-button:hover {
+      background: blueviolet;
+    }
+
+    .result {
+      margin-top: 40px;
+      padding: 20px;
+      background: pink;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .result img {
+      max-width: 300px;
+      margin-top: 10px;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tourist Recommendation System 🌍</h1>
+  </header>
+
+  <div class="container">
+    <h2>Find Your Perfect Travel Destination</h2>
+
+    <form>
+      <label for="combo">Select Budget + Climate + Activity:</label>
+      <select id="combo" onchange="location = this.value;">
+        <option value="#">-- Select a Combination --</option>
+        <option value="#USA">High + Cold + Adventure</option>
+        <option value="#Brazil">Medium + Hot + Cultural</option>
+        <option value="#India">Low + Moderate + Nature</option>
+        <option value="#Egypt">High + Hot + Relaxation</option>
+        <option value="#China">Medium + Cold + Cultural</option>
+        <option value="#France">Medium + Cold + Nature</option>
+        <option value="#Australia">Other Combination</option>
+      </select>
+    </form>
+  </div>
+
+  <!-- Destination Sections -->
+
+
+  <div class="container result" id="India">
+    <h2>We Recommend: India 🇮🇳</h2>
+    <img src="images/india.jpg" alt="India">
+    <p>Experience rich culture, festivals, and vibrant cities.</p>
+    <a href="#" class="back-link">🔙 Back to Selection</a>
+  </div>
+
+  <div class="container result" id="USA">
+    <h2>We Recommend: USA</h2>
+    <img src="images/nepal.jpg" alt="USA">
+    <p>Trek the Himalayas and enjoy peaceful natural beauty.</p>
+    <a href="#" class="back-link">🔙 Back to Selection</a>
+  </div>
+
+  <div class="container result" id="Brazil">
+    <h2>We Recommend: Brazil </h2>
+    <img src="images/switzerland.jpg" alt="Brazil">
+    <p>Snowy mountains, skiing, and luxury resorts await you!</p>
+    <a href="#" class="back-link">🔙 Back to Selection</a>
+  </div>
+
+  <div class="container result" id= "France">
+    <h2>We Recommend: France</h2>
+    <img src="images/maldives.jpg" alt="France">
+    <p>Relax on white sandy beaches and crystal-clear waters.</p>
+    <a href="#" class="back-link">🔙 Back to Selection</a>
+  </div>
+
+  <div class="container result" id="Egypt">
+    <h2>We Recommend: Egypt </h2>
+    <img src="images/japan.jpg" alt="Egypt">
+    <p>Enjoy snowy landscapes and deep cultural experiences.</p>
+    <a href="#" class="back-link">🔙 Back to Selection</a>
+  </div>
+
+  <div class="container result" id="China">
+    <h2>We Recommend: China</h2>
+    <img src="images/france.jpg" alt="China">
+    <p>A mix of history, art, wine, and stunning countryside.</p>
+    <a href="#" class="back-link">🔙 Back to Selection</a>
+  </div>
+  <div class="container result" id="Australia">
+    <h2>We Recommend: Australia</h2>
+    <img src="images/switzerland.jpg" alt="Australia">
+    <p>Snowy mountains, skiing, and luxury resorts await you!</p>
+    <a href="#" class="back-link">🔙 Back to Selection</a>
+  </div>
+</body>
+</html>
